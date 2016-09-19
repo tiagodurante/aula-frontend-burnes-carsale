@@ -30,7 +30,7 @@
 footer {
   background: #333333;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: #fff;
   margin-top: 20px;
 }
@@ -38,11 +38,11 @@ footer img {
   width: 10%;
 }
 .navbar {
-  border-radius: 0px;
+  border-radius: 0;
   margin-top: 10px;
   background: #FFF;
-  border: 0px;
-  box-shadow: 0px 0px 10px #cccccc;
+  border: 0;
+  box-shadow: 0 0 10px #cccccc;
 }
 .navbar .container-fluid ul li {
   padding: 10px 5px;
@@ -58,20 +58,20 @@ footer img {
 .navbar .container-fluid li:last-child {
   border-right: 1px solid #cccccc;
 }
-.navbar .container-fluid li:hover,
+.navbar .container-fluid li a:active,
 .navbar .container-fluid li:active,
-.navbar .container-fluid li a:active {
+.navbar .container-fluid li:hover {
   color: #cccccc;
   background: #333333;
 }
 .navbar .container-fluid .open {
   background: #333333;
 }
+.navbar .container-fluid .open a:focus,
+.navbar .container-fluid .open li,
 .navbar .container-fluid .open ul,
 .navbar .container-fluid .open ul li,
-.navbar .container-fluid .open ul li a,
-.navbar .container-fluid .open a:focus,
-.navbar .container-fluid .open li {
+.navbar .container-fluid .open ul li a {
   color: #cccccc;
   background: #333333;
 }
@@ -80,7 +80,7 @@ footer img {
   background: #cccccc;
 }
 .navbar .container-fluid .open li {
-  border: 0px;
+  border: 0;
 }
 h1,
 h2,
@@ -100,12 +100,11 @@ h3 {
 .erro {
   font: 1.5em Roboto, Arial;
   text-align: center;
-  width: 400px;
 }
 .btn-danger,
 .well {
-  border-radius: 0px;
-  border: 0px;
+  border-radius: 0;
+  border: 0;
 }
 #banner {
   float: left;
@@ -136,9 +135,16 @@ h3 {
   list-style: none;
   margin-left: -40px;
 }
+#map {
+  width: 100%;
+  height: 400px;
+}
+div .exibir-carros {
+  margin-bottom: 20px;
+}
 @media (max-width: 481px) {
-  header .logo,
-  header .info {
+  header .info,
+  header .logo {
     width: 100%;
     text-align: center;
   }
